@@ -1,0 +1,261 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+    background-color: #333;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+
+}
+
+.header {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    padding: 1rem 0;
+    width: 100%;
+}
+
+.header h1 {
+    font-size: 2rem;
+    color: #fff;
+}
+
+/* .search {
+    position: relative;
+}
+
+.search-icon {
+    fill: #888;
+    cursor: pointer;
+} */
+
+
+.container-blogs {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    justify-items: center;
+    padding: 20px;
+}
+
+.card1,
+.card2,
+.card3,
+.card4,
+.card5,
+.card6 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-bottom: 30px;
+    background-color: #333;
+    padding: 1rem;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    color: #ffffff;
+    width: 100%;
+    max-width: 300px;
+}
+
+.card-header-blue {
+    background-color: #007BFF;
+    color: #fff;
+    padding: 5px;
+    text-align: center;
+    font-weight: bold;
+    border-radius: 4px 4px 0 0;
+}
+
+
+.card-header-green {
+    background-color: #28A745;
+    color: #fff;
+    padding: 5px;
+    text-align: center;
+    font-weight: bold;
+    border-radius: 4px 4px 0 0;
+}
+
+.card-header-purple {
+    background-color: #6F42C1;
+    color: #fff;
+    padding: 5px;
+    text-align: center;
+    font-weight: bold;
+    border-radius: 4px 4px 0 0;
+}
+
+.card-header-red {
+    background-color: #DC3545;
+    color: #fff;
+    padding: 5px;
+    text-align: center;
+    font-weight: bold;
+    border-radius: 4px 4px 0 0;
+}
+
+.card-header-orange {
+    background-color: orange;
+    color: #fff;
+    padding: 5px;
+    text-align: center;
+    font-weight: bold;
+    border-radius: 4px 4px 0 0;
+}
+
+#one,
+#two,
+#three,
+#four,
+#fifth {
+    height: auto;
+    max-height: 150px;
+    border: 1px solid;
+    overflow: hidden;
+}
+
+#one {
+    border-color: #007BFF;
+}
+
+#two {
+    border-color: #28A745;
+}
+
+#three {
+    border-color: #6F42C1;
+}
+
+#four {
+    border-color: #DC3545;
+}
+
+#fifth {
+    border-color: orange;
+}
+
+#one img,
+#two img,
+#three img,
+#four img,
+#fifth img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    object-position: center;
+}
+
+.card-title {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin: 10px 0;
+    color: #fff;
+}
+
+.card-date {
+    font-size: 0.9rem;
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+.card-body {
+    font-size: 1rem;
+    color: #fff;
+    margin-bottom: 15px;
+}
+
+.continue-button-card {
+    align-self: flex-start;
+    padding: 8px 12px;
+    background-color: #007BFF;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+    margin-top: auto;
+}
+
+.continue-button-card:hover {
+    background-color: #0056b3;
+}
+
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 1rem;
+}
+
+.socials {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.socials a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.socials li a {
+    color: #007bff;
+    text-decoration: underline;
+}
+
+/* For screens smaller than 768px (tablet and mobile) */
+@media (max-width: 768px) {
+    .container {
+        width: 90%;
+    }
+
+    .header {
+        flex-direction: column;
+        align-items: center;
+        padding: 1rem;
+    }
+
+    .header h1 {
+        font-size: 1.8rem;
+    }
+
+    .container-blogs {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    }
+}
+
+/* For screens smaller than 480px (mobile devices) */
+@media (max-width: 480px) {
+    .header h1 {
+        font-size: 1.5rem;
+
+    }
+
+    .container-blogs {
+        grid-template-columns: 1fr;
+    }
+
+    .card-title {
+        font-size: 0.9rem;
+    }
+
+    .card-date,
+    .card-body {
+        font-size: 0.8rem;
+    }
+
+    .continue-button-card {
+        font-size: 0.9rem;
+        padding: 6px 10px;
+    }
+}
