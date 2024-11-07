@@ -1,0 +1,161 @@
+/* For screens smaller than 768px (tablet and mobile) */
+@media (max-width: 768px) {
+    .container {
+        width: 90%;
+    }
+
+    .header {
+        flex-direction: column;
+        align-items: center;
+        padding: 1rem;
+    }
+
+    .header h1 {
+        font-size: 1.8rem;
+    }
+
+    .container-blogs {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    }
+}
+
+/* For screens smaller than 480px (mobile devices) */
+@media (max-width: 480px) {
+    .header h1 {
+        font-size: 1.5rem;
+
+    }
+
+    .container-blogs {
+        grid-template-columns: 1fr;
+    }
+
+    .card-title {
+        font-size: 0.9rem;
+    }
+
+    .card-date,
+    .card-body {
+        font-size: 0.8rem;
+    }
+
+    .continue-button-card {
+        font-size: 0.9rem;
+        padding: 6px 10px;
+    }
+}
+
+
+
+/* blog */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .avatarImg {
+        margin-left: 0;
+        margin-top: 10px;
+        width: 80px;
+    }
+}
+
+/* Small devices (phones, 576px and up) */
+@media (min-width: 576px) and (max-width: 767.98px) {
+    .container {
+        flex-direction: column;
+        padding: 0 2rem;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .avatarImg {
+        margin-left: 0;
+        margin-top: 10px;
+        width: 80px;
+    }
+
+    .search {
+        width: auto;
+        top: 10px;
+        right: 10px;
+    }
+
+    .search textarea {
+        width: 180px;
+    }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+    .container {
+        flex-direction: column;
+        padding: 0 2.5rem;
+    }
+
+    nav ul {
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .avatarImg {
+        width: 100px;
+    }
+
+    .search {
+        top: 20px;
+        right: 20px;
+    }
+
+    .search textarea {
+        width: 200px;
+    }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+    .container {
+        flex-direction: row;
+        padding: 0 3rem;
+    }
+
+    .avatarImg {
+        width: 120px;
+        margin-left: 300px;
+    }
+
+    .search textarea {
+        width: 220px;
+    }
+
+    .search {
+        position: absolute;
+        top: 20px;
+        right: 20px;
+    }
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+    .container {
+        flex-direction: row;
+        padding: 0 4rem;
+    }
+
+    .avatarImg {
+        width: 140px;
+        margin-left: 300px;
+    }
+
+    .search textarea {
+        width: 250px;
+    }
+}

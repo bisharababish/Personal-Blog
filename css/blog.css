@@ -1,13 +1,35 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    user-select: none;
-}
+@import url("/css/core.css");
+@import url("/css/responsive.css");
+@import url("/css/blog.css");
 
 
 header h1 {
     text-align: center;
+}
+
+.search {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    position: absolute;
+    z-index: 1000;
+    top: 20px;
+    right: 20px;
+}
+
+.search-icon {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+
+.search textarea {
+    resize: none;
+    width: 200px;
+    height: 30px;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
 }
 
 body {
@@ -29,24 +51,6 @@ h2,
     color: #fff;
 }
 
-nav {
-    background: #444;
-}
-
-nav ul {
-    list-style: none;
-    display: flex;
-    justify-content: center;
-}
-
-nav ul li {
-    margin: 0 1rem;
-}
-
-nav ul li a {
-    color: #fff;
-    text-decoration: underline;
-}
 
 .subscribe-btn {
     padding: 10px 20px;
@@ -113,10 +117,17 @@ article h1 {
 }
 
 .avatarImg {
-    display: flex;
+    display: block;
     margin-top: -70px;
     margin-left: 300px;
     width: 120px;
+}
+
+figcaption {
+    color: #fff;
+    font-size: 0.7rem;
+    text-align: center;
+    margin-right: 450px;
 }
 
 .date {
